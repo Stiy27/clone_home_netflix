@@ -1,0 +1,121 @@
+:root {
+    --vermelho: rgb(224, 10, 10);
+    --preta:#141414;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*Elemento base*/
+body {
+    background: var(--preta);
+    font-family: 'Arial', Times, serif;
+    color: white;
+}
+
+header .container { /*Organiza logo e links de navegação*/
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 20px;
+}
+
+header .logo {
+    margin-left: 5px;
+    color: var(--vermelho);
+    font-family: 'Arial Black', Times;
+    font-size: 40px;
+}
+
+header nav a {
+    text-decoration: none;
+    color: #AAA;
+    margin-right: 10px;
+}
+
+header nav a:hover { /*autera a cor ao passar o mouse*/
+    color: #fff;
+}
+
+/*Série Principal*/
+.serie-principal {
+    font-size: 16px;
+    background-image: linear-gradient(rgba(0,0,0,0.50),
+                                      rgba(0,0,0,0.50)100%),
+                                        url("../img/super.png");
+
+    height: 400px;
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+}
+
+.serie-principal .container {
+    margin-left: 20px;
+    width: 70%;
+}
+
+.serie-principal .descricao {
+    margin-top: 15px;
+    margin-bottom: 40px;
+}
+
+.titulo {
+    margin-top: 5%;
+    font-size: 40px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.botao {/*Define as cores dos botões*/
+    background-color: rgba(0,0,0,.50);
+    border: none;
+    color: white;
+
+    padding: 15px 30px;
+    margin-right: 15px;
+    font-size: 12px;
+    /*font-family: gray;*/
+    
+    cursor: pointer;
+    transition: .5s;
+}
+
+.botao:hover { /*Muda a cor dos botões ao passar o mouse*/
+    background-color: white;
+    color: black;
+}
+
+.botao i {/*Margem dos íconos ds botões*/
+    margin-right: 5px;
+}
+
+.box-serie {
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+
+.carrosel-series {
+    margin-top: 5px;
+}
+
+.series {
+    margin: 5px;
+    font-size: 30px;;
+}
+
+.carrosel-filmes {
+    margin-top: 5px;
+}
+
+.filmes {
+    margin: 5px;
+    font-size: 30px;;
+}
